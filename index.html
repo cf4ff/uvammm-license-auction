@@ -31,17 +31,18 @@
         <div>
             <h2>Relevant Literature</h2>
             <p>This project takes inspiration from Prof. Holt's 2013 paper on Shanghai license plate auctions. 
-                The authors of the paper simulated simplified versions of the two auctions, 
-                in addition to a uniform price auction where bidders could only bid once but they all pay the highest rejected price.
-                Three sessions were run for each of the three auction formats, 
-                and an additional three sessions were run for a revised version of the new Shanghai auction. In this revised version, 
-                the initial bids were submitted without any information provided about the lowest acceptable price. 
-                The purpose of this revised new auction treatment was to assess the relative importance of the two components of the 
-                new Shanghai auction, the initial bid and the revisions of the initial bid.
-                Each session consists of 12 participants, who were bidders in a series of 10 auctions, 
-                with 6 licenses up for sale in each. Participants could bid for a single license, 
-                with a value that was randomly determined from a discrete uniform distribution on the interval from $50 to $150, 
-                with each integer in this range being equally likely. Initial bids were required to be in the interval from $10 to $200.</p>
+                The authors of the paper simulated four versions of the auction in a lab experiment:  </p>
+            <ul>
+                <li>The first two were simplified versions of the real auction format used in Shanghai pre-2008 and post-2008. </li>
+                <li>The third auction format was a uniform price auction where bidders could only bid once, similar to pre-2008 Shanghai auction,
+                    but all the winning bidders pay the same price (highest rejected price since it will clear the market) 
+                    instead of their own bidding price. </li>
+                <li>The final auction is similar to the post-2008 format except the initial bids were submitted without any information 
+                    provided about the lowest acceptable price. The purpose of this revised new auction treatment was to assess the 
+                    relative importance of the two components of the new Shanghai auction, 
+                    the initial bid and the revisions of the initial bid.</li> 
+            </ul>
+
             
             <p>In a lab setting, Holt demonstrated that Shanghai’s new auction format was able to reduce the license price. 
                 In actuality, however, after implementing the new auction format, 
