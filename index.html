@@ -83,7 +83,7 @@
             
         </div>
         <div>
-            <h2>Models and Prediction</h2>
+            <h2>Data and Models</h2>
             <h3>Data Selection</h3>
             <p>We want to be able to predict average price and we decided to use the following as variables to formulate a predictor: </p>
             <ul>
@@ -94,7 +94,25 @@
                 <li>Shanghai earnings</li>
             </ul>
             <p>We decided to use post-2008 data for training and pre-2008 data for testing. Our dataset only spans from 2008 to 
-                2018, we did this so that we would have 10 years of training data as opposed to only 5. </p>
+                2018, we did this so that we would have 10 years of training data as opposed to only 5. We will create a model for 
+                the post-2008 auction format and use that model to predict the pre-2008 prices. We will compare our predictions
+                against the actual prices and determine whether the new auction format is able to lower prices</p>
+            <h3>Linear Regression</h3>
+            <p>The first model that we tried was linear regression. However, as shown in the results, the RMSE is too large for it 
+                to be a good predictor. </p>
+            <h3>Linear SVM</h3>
+            <p>Linear SVM showed promise after we performed model regularization. The resulting RMSE is around 8590. This is the model
+                we used during class presentation. </p>
+            <h3>Gradient Boosting Regression</h3>
+            <p>It is possible that because we don't have a lot of data, a single model will not be able to do good job at predicting. 
+                Therefore, we experimented with ensemble learning methods and constructed a gradient boosting regression. Through this, 
+                our model is able to learn about its mistakes and improve upon them. The result is a huge improvement upon 
+                linear SVM model with a RMSE of 5460. 
         </div>
+        
+        <div>
+            <h2>Results</h2>
+        </div>
+        
     </body>
 </html>
