@@ -14,16 +14,36 @@
             <p>Increasing traffic congestion is one of the biggest problems facing big cities such as New York and Shanghai.
                 To tackle this challenge, cities have been trying out different market mechanisms to curb increasing traffic. 
                 New York have been thinking about implementing road congestion pricing. 
-                Shanghai, however, decided to curb traffic by auctioning off a limited supply license plates every month.
-                Up until 2008, Shanghai have been using a closed information, single bid auctioning format. But as license plate price
+                Shanghai, however, decided to curb traffic by auctioning off a limited supply of license plates every month.
+                Up until 2008, Shanghai have been using a single bid auctioning format. But as license plate price
                 soared, Shanghai decided to switch auctioning format by allowing bidder to revise their bids. Our project aims to determine
                 whether the new format helped with curbing the rising license prices. </p>
         </div>
         <div>
             <h2>A little about the auction</h2>
-            <p></p>
+            <p>Prior to 2008, Shanghai used an auction format where bidders submit their bid once, and the highest bidders get allocated
+                with the license plates. The pricing is "discriminatory", meaning that the winning bidders pay their own bids. 
+                The only information available is the minimum accepted price of the previous rounds. </p>
+            <p>As the price license plates keeps rising, Shanghai government decided to change the auction format with the goal of lowering license
+                price for the bidders. The new auction allows for two revisions of initial bid prices. The revisions must fall within a narrow
+                price window of around $50 around the lowest accepted bid. </p>
+        </div>
+        <div>
+            <h2>Relevant Literature</h2>
             <p>This project takes inspiration from Prof. Holt's 2013 paper on Shanghai license plate auctions. 
-                In a lab setting, Holt demonstrated that Shanghai’s new auction format was able to reduce the license price in lab simulation. 
+                The authors of the paper simulated simplified versions of the two auctions, 
+                in addition to a uniform price auction where bidders could only bid once but they all pay the highest rejected price.
+                Three sessions were run for each of the three auction formats, 
+                and an additional three sessions were run for a revised version of the new Shanghai auction. In this revised version, 
+                the initial bids were submitted without any information provided about the lowest acceptable price. 
+                The purpose of this revised new auction treatment was to assess the relative importance of the two components of the 
+                new Shanghai auction, the initial bid and the revisions of the initial bid.
+                Each session consists of 12 participants, who were bidders in a series of 10 auctions, 
+                with 6 licenses up for sale in each. Participants could bid for a single license, 
+                with a value that was randomly determined from a discrete uniform distribution on the interval from $50 to $150, 
+                with each integer in this range being equally likely. Initial bids were required to be in the interval from $10 to $200.</p>
+            
+            <p>In a lab setting, Holt demonstrated that Shanghai’s new auction format was able to reduce the license price. 
                 In actuality, however, after implementing the new auction format, 
                 the license price at first drastically grew up and then stabilized at a much higher price level. 
                 Our study was to discover whether the new auction format has actually led to the price increase.</p> 
